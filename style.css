@@ -1,0 +1,2358 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "poppins",sans-serif;
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+}
+@media (min-width: 1024px) 
+{
+    
+header{
+    color: white;
+    background-color: rgb(8, 43, 89);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo h2{
+    font-size: 30px;
+}
+.navbars i{
+    display: none;
+}
+#icon1 {
+    display: none;
+}
+
+
+.navbars nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbars nav ul li a{
+    color: white;
+}
+.navbars nav ul li::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    transition: .5s ease;
+    background-color: white;
+}
+.navbars nav ul li:hover::after{
+    width: 100%;
+    
+}
+
+/* homepage */
+
+.homepage{
+    color: white;
+    background-image: url(picicon.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+    
+}
+.homepage::before{
+    content: '';
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0, 0,0.5);
+    z-index: 1;
+}
+.homepage_text{
+    position: relative;
+    z-index: 2;
+
+}
+.homepage p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.homepage h2{
+    font-size: 40px;
+    margin-bottom: 25px;
+    
+}
+.homepage button{
+    position: relative;
+   z-index: 1;
+    border: none;
+    padding: 15px ;
+    width: 150px;
+    background: hsl(39, 100%, 60%);
+}
+.homepage button a{
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+
+/*homepage1*/
+
+
+.homepage1{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+.image_container img{
+    width: 80%;
+    height: 200px;
+    
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 40px;
+}
+.homepage1-text{
+    padding: 40px;
+    text-align: center;
+
+}
+.homepage1-text h2{
+    margin-bottom: 15px;
+}
+.homepage1-text p{
+    margin-bottom:20px ;
+}
+.homepage1 button {
+    border: none;
+    padding: 15px;
+    width: 150px;
+    background: hsl(39, 100%, 60%);
+}
+
+.homepage1 button a {
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+}
+/*.homepage2*/
+.homepage2 {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-container2 img {
+    width: 70%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 40px;
+}
+
+.homepage2-text {
+    padding: 40px;
+    text-align: center;
+
+}
+
+.homepage2-text h2 {
+    margin-bottom: 15px;
+}
+
+.homepage2-text p {
+    margin-bottom: 20px;
+}
+/*homepage3*/
+.homepage3 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-container3 img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+     border-radius: 0px 20px 20px 0px;
+    margin-left: 40px;
+}
+
+.homepage3-text {
+    padding: 40px;
+    text-align: center;
+
+}
+
+.homepage3-text h2 {
+    margin-bottom: 15px;
+}
+
+.homepage3-text p {
+    margin-bottom: 20px;
+}
+
+/*homepage4*/
+.homepage4 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-container4 img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0px  20px 20px 0px ;
+    margin-left: 40px;
+}
+
+.homepage4-text {
+    padding: 40px;
+    text-align: center;
+
+}
+
+.homepage4-text h2 {
+    margin-bottom: 15px;
+}
+
+.homepage4-text p {
+    margin-bottom: 20px;
+}
+
+
+/*About us */
+
+            .aboutpage {
+                color: white;
+                background-image: url(back2.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 500px;
+                text-align: center;
+                padding: 150px 0;
+                margin-bottom: 30px;
+            }
+
+            .aboutpage p {
+                font-size: 20px;
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+
+            .aboutpage h2 {
+                font-size: 30px;
+                margin-bottom: 30px;
+
+            }
+            .aboutpage1-content{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 50px 0;
+            }
+            .aboutpage1{
+               text-align: center;
+                
+            }
+            .aboutpage1-img img{
+                width: 80%;
+                object-fit: cover;
+                margin: 20px 10px;
+                height: 250px;
+            }
+            .aboutpage1-text{
+                    padding: 40px;
+                    margin: 30px 10px;
+                    text-align: left;
+                    
+                    
+            }
+            .aboutpage1-text h3{
+                margin-bottom: 20px;
+            }
+
+
+                        .aboutpage1-img1 img {
+                            width: 80%;
+                            object-fit: cover;
+                            margin: 20px 10px;
+                            height: 250px;
+                        }
+            
+                        .aboutpage1-text1 {
+            
+                            text-align: left;
+                            margin: 10px 40px;
+                        }
+            
+                        .aboutpage1-text1 h3 {
+                            margin-bottom: 20px;
+                        }
+
+                        .aboutpage1-content1 {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            margin: 50px 0;
+                        }
+.program1 {
+    background-image: url(programs.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.program1 h2 {
+    margin-bottom: 3%;
+    font-size: 25px;
+}
+
+.programs2 {
+    background-color: hsl(0, 0%, 10%);
+    text-align: center;
+    padding: 30px;
+}
+
+.program-content {
+
+    padding: 20px;
+}
+
+.program-image img {
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.program-text {
+    padding: 30px;
+    text-align: left;
+}
+.program-text p{
+    text-align: left;
+    font-size: 15px;
+}
+
+.program-content1 {
+    padding: 10px;
+}
+
+.program-image1 img {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.program-text1 {
+    padding: 30px;
+    text-align: left;
+    font-size: 10px;
+}
+
+
+
+.program-content1 {
+    padding: 10px;
+}
+
+.program-image1 img {
+    width: 70%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.program-text1 p{
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+.program-text1 h2{
+    font-size: 25px;
+}
+}
+
+
+@media   (max-width:500px) {
+    
+    
+        .homepage {
+            color: white;
+            background-image: url(picicon.JPG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 400px;
+            text-align: center;
+            padding: 70px 0;
+            position: relative;
+        }
+                .homepage::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    z-index: 1;
+                }
+        
+                .homepage_text {
+                    position: relative;
+                    z-index: 2;
+                }
+    
+        .homepage p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+    
+        .homepage h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+    
+        }
+    
+        .homepage button {
+            position: relative;
+            z-index: 2;
+            border: none;
+            padding: 10px;
+            width: 70%;
+            background: hsl(39, 100%, 60%);
+        }
+    
+        .homepage button a {
+            font-weight: bold;
+            font-size: 15px;
+            color: #000;
+        }
+        /*homepage1*/
+    
+    
+        .homepage1 {
+            margin-top: 20px;
+            
+        }
+    
+        .image_container img {
+            width: 80%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px ;
+            margin: 5px 40px;
+        }
+    
+        .homepage1-text {
+            padding: 20px;
+            text-align: center;
+    
+        }
+    
+        .homepage1-text h2 {
+            margin-bottom: 10px;
+        }
+    
+        .homepage1-text p {
+            margin-bottom: 10px;
+        }
+    
+        .homepage1 button {
+            border: none;
+            padding: 10px;
+            width: 80%;
+            background: hsl(39, 100%, 60%);
+        }
+    
+        .homepage1 button a {
+            font-weight: bold;
+            font-size: 15px;
+            color: #000;
+        }
+      
+                /*.homepage2*/
+                .homepage2 {
+                    margin-top: 20px;
+                    align-items: center;
+                    margin: 10px 30px  ;
+                }
+        
+                .image-container2 img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 10px ;
+                }
+        
+                .homepage2-text {
+                    padding: 30px;
+                    text-align: center;
+        
+                }
+        
+                .homepage2-text h2 {
+                    margin-bottom: 10px;
+                }
+        
+                .homepage2-text p {
+                    margin-bottom: 10px;
+                }
+        /*homepage3*/
+        .homepage3 {
+            margin-top: 20px;
+            
+        }
+    
+        .image-container3 img {
+            width: 85%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px ;
+            margin: 10px 30px;
+        }
+    
+        .homepage3-text {
+            padding: 20px;
+            text-align: center;
+    
+        }
+    
+        .homepage3-text h2 {
+            margin-bottom: 10px;
+        }
+    
+        .homepage3-text p {
+            margin-bottom: 20px;
+        }
+                        /*homepage4*/
+                        .homepage4 {
+                            margin-top: 20px;
+                            
+                        }
+            
+                        .image-container4 img {
+                            width: 85%;
+                            height: 200px;
+                            object-fit: cover;
+                            border-radius:  20px ;
+                            margin: 10px 30px;
+                        }
+            
+                        .homepage4-text {
+                            padding: 20px;
+                            text-align: center;
+            
+                        }
+            
+                        .homepage4-text h2 {
+                            margin-bottom: 10px;
+                        }
+            
+                        .homepage4-text p {
+                            margin-bottom: 20px;
+                        }
+
+                        /*ABOUTS US*/
+                                                .aboutpage {
+                                                    color: white;
+                                                    background-image: url(back2.jpg);
+                                                    background-size: cover;
+                                                    background-repeat: no-repeat;
+                                                    background-position: center;
+                                                    height: 400px;
+                                                    text-align: center;
+                                                    padding: 120px 0;
+                                                    margin-bottom: 30px;
+                                                    position: relative;
+                                                    z-index: 2;
+                                                }
+                            
+                        
+                        
+                        
+                                                .aboutpage::before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    background-color: rgba(0, 0, 0, 0.5);
+                                                    z-index: 1;
+                                                }
+                        
+                                                .homepage_text {
+                                                    position: relative;
+                                                }
+                                                .aboutpage p {
+                                                    font-size: 15px;
+                                                    margin-bottom: 10px;
+                                                    font-weight: 300;
+                                                    z-index: 3;
+                                                    position: relative;
+                                                }
+                        
+                                                .aboutpage h2 {
+                                                    font-size: 25px;
+                                                    margin-bottom: 20px;
+                                                    z-index: 3;
+                                                    position: relative;
+                        
+                                                }
+            .aboutpage1{
+                align-items: center;
+                text-align: center;
+            }
+            .aboutpage1-img img{
+                width: 90%;
+                object-fit: cover;
+                margin: 10px 5px;
+                height: 250px;
+            }
+            .aboutpage1-text{
+
+                    text-align: left;
+                    margin: 10px;
+            }
+            .aboutpage1-text h3{
+                margin-bottom: 20px;
+            }
+
+
+                        .aboutpage1-img1 img {
+                            width: 80%;
+                            object-fit: cover;
+                            margin: 20px 10px;
+                            height: 250px;
+                        }
+            
+                        .aboutpage1-text1 {
+            
+                            text-align: left;
+                            margin: 10px 40px;
+                        }
+            
+                        .aboutpage1-text1 h3 {
+                            margin-bottom: 20px;
+                        }
+                                                .program1 {
+                                                    background-image: url(programs.JPG);
+                                                    background-position: center;
+                                                    background-size: cover;
+                                                    background-repeat: no-repeat;
+                                                    height: 500px;
+                                                    padding: 100px 0;
+                                                    align-items: center;
+                                                    text-align: center;
+                                                }
+                        
+                                                .program1 h2 {
+                                                    margin-bottom: 3%;
+                                                    font-size: 25px;
+                                                }
+                        
+                                                .programs2 {
+                                                    background-color: hsl(0, 0%, 10%);
+                                                    text-align: center;
+                                                    padding: 30px;
+                                                }
+                        
+                                                .program-content {
+                        
+                                                    padding: 10px;
+                                                }
+                        
+                                                .program-image img {
+                                                    width: 70%;
+                                                    height: 400px;
+                                                    object-fit: cover;
+                                                }
+                        
+                                                .program-text {
+                                                    padding: 30px;
+                                                    text-align: left;
+                                                    font-size: 15px;
+                                                }
+                        
+                                                .program-content1 {
+                                                    padding: 10px;
+                                                }
+                        
+                                                .program-image1 img {
+                                                    width: 70%;
+                                                    height: 300px;
+                                                    object-fit: cover;
+                                                }
+                        
+                                                .program-text1 {
+                                                    padding: 30px;
+                                                    text-align: left;
+                                                    font-size: 10px;
+                                                }
+                        
+                        
+                        
+                                                .program-content1 {
+                                                    padding: 10px;
+                                                }
+                        
+                                                .program-image1 img {
+                                                    width: 70%;
+                                                    height: 280px;
+                                                    object-fit: cover;
+                                                }
+                        
+                                                .program-text1 {
+                                                    padding: 30px;
+                                                    text-align: left;
+                                                }
+                        
+                                                .program-text1 p {
+                                                    font-size: 15px;
+                                                    text-align: left;
+                                                }
+                        
+                                                .program-text1 h2 {
+                                                    font-size: 25px;
+                                                }
+
+}
+
+/*tablet mode*/
+
+@media (max-width:900px) {
+    header {
+            color: white;
+            background-color: rgb(8, 43, 89);
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+        .logo h2 {
+            font-size: 25px;
+            margin-left: 8px;
+        }
+    
+        .navbars i {
+            display: none;
+        }
+        .menu-icon i{
+            display: none;
+        }
+        
+    
+        .navbars nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    
+        .navbars nav ul li a {
+            color: white;
+            font-size: 15px;
+        }
+    
+        .navbars nav ul li::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 0%;
+            transition: .5s ease;
+            background-color: white;
+        }
+    
+        .navbars nav ul li:hover::after {
+            width: 100%;
+    
+        }
+                /* homepage */
+        
+                .homepage {
+                    color: white;
+                    background-image: url(picicon.JPG);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 500px;
+                    text-align: center;
+                    padding: 150px 0;
+                    position: relative;
+                }
+                  .homepage::before {
+                      content: '';
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      background-color: rgba(0, 0, 0, 0.4);
+                      z-index: 1;
+                  }
+        
+                  .homepage_text {
+                      position: relative;
+                      z-index: 2;
+                  }
+        
+                  .homepage p {
+                      font-size: 15px;
+                      margin-bottom: 10px;
+                      font-weight: 300;
+                  }
+        
+                  .homepage h2 {
+                      font-size: 25px;
+                      margin-bottom: 20px;
+        
+                  }
+        
+                  .homepage button {
+                      position: relative;
+                      z-index: 2;
+                      border: none;
+                      padding: 10px;
+                      width: 80%;
+                      background: hsl(39, 100%, 60%);
+                  }
+                .homepage p {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                   
+                }
+        
+                .homepage h2 {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+        
+                }
+        
+                .homepage button {
+                    border: none;
+                    padding: 10px;
+                    width: 40%;
+                    background: hsl(39, 100%, 60%);
+                }
+        
+                .homepage button a {
+                    font-weight: bold;
+                    font-size: 15px;
+                    color: #000;
+                }
+        
+                /*homepage1*/
+
+                                .homepage1 {
+                                    margin-top: 20px;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                
+                                .image_container img {
+                                    width: 80%;
+                                    height: 250px;
+                                    object-fit: cover;
+                                    border-radius: 0px 20px ;
+                                    margin-left: 4%;
+                                }
+                
+                                .homepage1-text {
+                                    padding: 20px;
+                                    text-align: center;
+                
+                                }
+                
+                                .homepage1-text h2 {
+                                    margin-bottom: 12px;
+                                }
+                
+                                .homepage1-text p {
+                                    margin-bottom: 15px;
+                                }
+                
+                                .homepage1 button {
+                                    border: none;
+                                    padding: 10px;
+                                    width: 150px;
+                                    background: hsl(39, 100%, 60%);
+                                }
+                
+                                .homepage1 button a {
+                                    font-weight: bold;
+                                    font-size: 15px;
+                                    color: #000;
+                                }
+                
+                                /*.homepage2*/
+        .homepage2 {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        .image-container2 img {
+            width: 80%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 0px 20px ;
+            margin-left: 4%;
+        }
+    
+        .homepage2-text {
+            padding: 25px;
+            text-align: center;
+    
+        }
+    
+        .homepage2-text h2 {
+            margin-bottom: 12px;
+        }
+    
+        .homepage2-text p {
+            margin-bottom: 15px;
+        }
+    
+        /*homepage3*/
+        .homepage3 {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        .image-container3 img {
+            width: 80%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 0px 20px;
+            margin-left: 4%;
+        }
+    
+        .homepage3-text {
+            padding: 25px;
+            text-align: center;
+    
+        }
+    
+        .homepage3-text h2 {
+            margin-bottom: 12px;
+        }
+    
+        .homepage3-text p {
+            margin-bottom: 15px;
+        }
+    
+        /*homepage4*/
+                            .homepage4 {
+                                margin-top: 20px;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                            }
+        
+                            .image-container4 img {
+                                width: 80%;
+                                height: 250px;
+                                object-fit: cover;
+                                border-radius: 0px 20px;
+                            }
+        
+                            .homepage4-text {
+                                padding: 25px;
+                                text-align: center;
+        
+                            }
+        
+                            .homepage4-text h2 {
+                                margin-bottom: 12px;
+                            }
+        
+                            .homepage4-text p {
+                                margin-bottom: 15px;
+                            }
+
+        
+
+                        /*ABOUTS US*/
+
+                                .aboutpage {
+                                color: white;
+                                background-image: url(back2.jpg);
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                height: 400px;
+                                text-align: center;
+                                padding: 100px 0;
+                                margin-bottom: 30px;
+                            }
+    
+                            .aboutpage p {
+                                font-size: 15px;
+                                margin-bottom: 10px;
+                                font-weight: 300;
+                            }
+    
+                            .aboutpage h2 {
+                                font-size: 25px;
+                                margin-bottom: 25px;
+    
+                            }
+            .aboutpage1{
+                align-items: center;
+                text-align: center;
+            }
+            .aboutpage1-img img{
+                width: 90%;
+                object-fit: cover;
+                margin: 15px 5px;
+                height: 250px;
+            }
+            .aboutpage1-text{
+                    text-align: center;
+                    margin: 10px 5px;
+            }
+            .aboutpage1-text h3{
+                margin-bottom: 20px;
+            }
+
+
+                        .aboutpage1-img1 img {
+                            width: 90%;
+                            object-fit: cover;
+                            margin: 20px 10px;
+                            height: 250px;
+                        }
+            
+                        .aboutpage1-text1 {
+            
+                            text-align: center;
+                            margin: 10px 10px;
+                        }
+            
+                        .aboutpage1-text1 h3 {
+                            margin-bottom: 20px;
+                        } 
+
+                        
+        /*contact us*/
+                .contact-info1 {
+                    align-items: center;
+                    justify-content: center;
+        
+                }
+        
+                .contactpage {
+                    padding: 50px;
+                    text-align: center;
+                }
+        
+                .location,
+                h2,
+                p {
+                    text-align: center;
+                }
+        
+                .location-details {
+                    align-items: flex-start;
+                    margin-left: 5%;
+        
+                }
+        
+                .location-details p {
+                    text-align: left;
+                    font-size: 15px;
+        
+                }
+                 .location-details p i{
+                    margin-right: 3%;
+                 }
+        
+                .contactpage button {
+                    border: none;
+                    background-color: orange;
+                    padding: 10px 0;
+                    width: 130px;
+                    margin-top: 20px;
+                }
+        
+                .contactpage button a {
+                    color: #000;
+                    font-weight: 600;
+                }
+
+                                .program1 {
+                                    background-image: url(programs.JPG);
+                                    background-position: center;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    height: 500px;
+                                    padding: 100px;
+                                    align-items: center;
+                                    text-align: center;
+                                }
+                
+                                .program1 h2 {
+                                    margin-bottom: 3%;
+                                    font-size: 25px;
+                                }
+                
+                                .programs2 {
+                                    background-color: hsl(0, 0%, 10%);
+                                    text-align: center;
+                                    padding: 30px;
+                                }
+                
+                                .program-content {
+                
+                                    padding: 10px;
+                                }
+                
+                                .program-image img {
+                                    width: 90%;
+                                    height: 250px;
+                                    object-fit: cover;
+                                }
+                
+                                .program-text {
+                                    padding: 30px;
+                                    text-align: left;
+                                    font-size: 15px;
+                                }
+                
+                                .program-content1 {
+                                    padding: 10px;
+                                }
+                
+                                .program-image1 img {
+                                    width: 70%;
+                                    height: 300px;
+                                    object-fit: cover;
+                                }
+                
+                                .program-text1 {
+                                    padding: 30px;
+                                    text-align: center;
+                                    font-size: 10px;
+                                }
+                
+                
+                
+                                .program-content1 {
+                                    padding: 10px;
+                                }
+                
+                                .program-image1 img {
+                                    width: 70%;
+                                    height: 280px;
+                                    object-fit: cover;
+                                }
+                
+                                .program-text1 {
+                                    padding: 30px;
+                                    text-align: left;
+                                }
+                                .program-text1 p{
+                                    font-size: 15px;
+                                    text-align: left;
+                                }
+                                .program-text1 h2{
+                                    font-size: 25px;
+                                }  
+        /*contact page*/
+            .contact-info1 {
+                align-items: center;
+                justify-content: center;
+        
+            }
+        
+            .contactpage {
+                padding: 50px;
+                text-align: center;
+            }
+        
+            .location,
+            h2,
+            p {
+                text-align: center;
+            }
+        
+            .location-details {
+                align-items: flex-start;
+        
+        
+            }
+        
+            .location-details p {
+                text-align: left;
+                margin: 0 2%;
+        
+            }
+        
+            .location-details p i {
+                margin-right: 15%;
+                background-color: orange;
+                border-radius: 50%;
+                color: black;
+                padding: 5px;
+                margin: 2px 0;
+            }
+        
+            .location-details p a {
+                color: white;
+                text-decoration: underline;
+            }
+        
+            .contactpage button {
+                border: none;
+                background-color: orange;
+                padding: 10px 0;
+                width: 130px;
+                margin-top: 20px;
+            }
+        
+            .contactpage button a {
+                color: #000;
+                font-weight: 600;
+            } 
+        /*gallery*/ 
+        .image1 {
+            align-items: center;
+            display: flex;
+            margin-top: 15px;
+            margin: 20px 20px;
+            justify-content: center;
+        }
+    
+        .image1 img {
+            width: 40%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin: 10px;
+        }
+    
+        .image5 {
+            align-items: center;
+            display: flex;
+            margin-top: 30px;
+            padding: 10px;
+            justify-content: center;
+        }
+    
+        .image5 img {
+            width: 70%;
+            margin: 20px;
+            width: 40%;
+            margin: 20px 30px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px; 
+            border-radius: 5px;
+            margin: 10px;
+    }
+    
+        .image7 {
+            align-items: center;
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+           
+        }
+    
+        .image7 img {
+            width: 60%;
+            margin: 15px;
+            width: 40%;
+            margin: 20px 35px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin: 10px;
+        }
+    
+}
+          
+
+
+
+/*PROGRAM PAGE*/
+@media (min-width:1024px) {
+
+    header {
+            color: white;
+            background-color: rgb(8, 43, 89);
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+        .logo h2 {
+            font-size: 30px;
+        }
+    
+        .navbars i {
+            display: none;
+        }
+                #icon1 {
+                    display: none;
+                }
+    
+        .navbars nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+    
+        .navbars nav ul li a {
+            color: white;
+        }
+    
+        .navbars nav ul li::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 0%;
+            transition: .5s ease;
+            background-color: white;
+        }
+    
+        .navbars nav ul li:hover::after {
+            width: 100%;
+    
+        }
+        .program1{
+            background-image: url(programs.JPG);
+            background-position: center;
+            background-size:cover ;
+            background-repeat: no-repeat;
+            height: 500px;
+            padding: 150px ;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .program1 h2{
+            margin-bottom: 5%;
+            font-size: 30px;
+        }
+        .programs2{
+            background-color: #000;
+            text-align: center;
+            padding: 50px;
+        }
+        .program-content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 50px;
+        }
+        .program-image img{
+            width: 70%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .program-text{
+            padding: 50px;
+        }
+        .program-content1{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 50px;
+            }
+        
+                .program-image1 img {
+                    width: 70%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+        
+                .program-text1 {
+                    padding: 50px;
+                }
+
+                /*gallery*/
+                .image1{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+                .image {
+                    margin-bottom: 10%;
+                    margin-left: 13%;
+                }
+                .image img{
+                    width: 80%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+                                .image5 {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                }
+                .image2 img{
+                    width: 80%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+                .image3 img {
+                    width: 80%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+                .image8 {
+                    margin: 0 20%;
+                }
+                .image8 img{
+                    width: 80%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+
+
+/*tablet view*/
+@media (max-width:720px) {
+
+    header {
+        color: white;
+        background-color: rgb(8, 43, 89);
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo h2 {
+        font-size: 19px;
+    }
+
+    .navbars i {
+        display: none;
+    }
+    .menu-icon i {
+            display: none;
+        }
+    .navbars nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .navbars nav ul li a {
+        color: white;
+    }
+
+    .navbars nav ul li::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0%;
+        transition: .5s ease;
+        background-color: white;
+    }
+
+    .navbars nav ul li:hover::after {
+        width: 100%;
+
+    }
+
+    .program1 {
+        background-image: url(programs.JPG);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        padding: 100px 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .program1 h2 {
+        margin-bottom: 3%;
+        font-size: 25px;
+    }
+
+    .programs2 {
+        background-color: hsl(0, 0%, 10%);
+        text-align: center;
+        padding: 30px;
+    }
+
+    .program-content {
+        
+        padding: 10px;
+    }
+
+    .program-image img {
+        width: 90%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .program-text {
+        padding: 30px;
+        text-align: left;
+    }
+
+    .program-content1 {
+        padding: 10px;
+    }
+
+    .program-image1 img {
+        width: 90%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .program-text1 {
+        padding: 30px;
+        text-align: left;
+    }
+        .contact-info1 {
+            align-items: center;
+            justify-content: center;
+    
+        }
+    
+        .contactpage {
+            padding: 50px;
+            text-align: center;
+        }
+    
+        .location,
+        h2,
+        p {
+            text-align: center;
+        }
+    
+        .location-details {
+            align-items: flex-start;
+    
+    
+        }
+    
+        .location-details p {
+            text-align: left;
+    
+        }
+    
+        .location-details p i {
+            margin-right: 2%;
+            background-color: orange;
+            border-radius: 50%;
+            color: black;
+            padding: 5px;
+            margin: 2px 0;
+        }
+    
+        .location-details p a {
+            color: white;
+            text-decoration: underline;
+        }
+
+                 /*gallery*/
+                 
+        .image1{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+        }
+        .image1 img{
+            width: 30%;
+            margin: 20px;
+        }
+                .image5 {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+        
+                }
+        
+                .image5 img {
+                    width: 30%;
+                    margin: 10px;
+                }
+        .image7 {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+    
+        }
+    
+        .image7 img {
+            width: 30%;
+            margin: 10px;
+        }
+                .program1 {
+                    background-image: url(programs.JPG);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 500px;
+                    padding: 100px 0;
+                    align-items: center;
+                    text-align: center;
+                }
+        
+                .program1 h2 {
+                    margin-bottom: 3%;
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+                .program1 h2 {
+                    margin-bottom: 3%;
+                    font-size: 25px;
+                }
+        
+                .programs2 {
+                    background-color: hsl(0, 0%, 10%);
+                    text-align: center;
+                    padding: 30px;
+                }
+        
+                .program-content {
+        
+                    padding: 10px;
+                }
+        
+                .program-image img {
+                    width: 90%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+        
+                .program-text {
+                    padding: 30px;
+                    text-align: center;
+                }
+        
+                .program-content1 {
+                    padding: 10px;
+                }
+        
+                .program-image1 img {
+                    width: 90%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+        
+                .program-text1 {
+                    padding: 30px;
+                    text-align: left;
+                    font-size: 10px;
+                }
+        
+        
+        
+                .program-content1 {
+                    padding: 10px;
+                }
+        
+                .program-image1 img {
+                    width: 70%;
+                    height: 280px;
+                    object-fit: cover;
+                }
+        
+                .program-text1 {
+                    padding: 30px;
+                    text-align: left;
+                }
+}
+@media (max-width:500px) {
+     
+    .program1 {
+            background-image: url(programs.JPG);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+            padding: 140px 0;
+            align-items: center;
+            text-align: center;
+    }
+     .program1 h2 {
+            margin-bottom: 2%;
+            font-size: 15px;
+        }
+    
+        .programs2 {
+            background-color: hsl(0, 0%, 10%);
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .program-content {
+    
+            padding: 10px;
+        }
+    
+        .program-image img {
+            width: 90%;
+            height: 200px;
+            object-fit: cover;
+        }
+    
+        .program-text p {
+            
+            text-align: left;
+           
+
+        }
+                .program-text1 p{
+                    font-size: 15px;
+                    text-align: left;
+                }
+            
+        /*contact page*/
+                .contact-info1 {
+                    align-items: center;
+                    justify-content: center;
+        
+                }
+        
+                .contactpage {
+                    padding: 50px;
+                    text-align: center;
+                }
+        
+                .location,
+                h2,
+                p {
+                    text-align: center;
+                }
+        
+                .location-details {
+                    align-items: flex-start;
+                    
+        
+                }
+        
+                .location-details p {
+                    text-align: left;
+        
+                }
+        
+                .location-details p i {
+                    margin-right: 2%;
+                    background-color: orange;
+                    border-radius: 50%;
+                    color: black;
+                    padding: 5px;
+                    margin: 2px 0;
+                }
+        
+                .location-details p a {
+                    color: white;
+                    text-decoration: underline;
+                }
+        
+                .contactpage button {
+                    border: none;
+                    background-color: orange;
+                    padding: 10px 0;
+                    width: 130px;
+                    margin-top: 20px;
+                }
+        
+                .contactpage button a {
+                    color: #000;
+                    font-weight: 600;
+                }
+    
+
+                  /*gallery*/
+                  .image1 {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 15px;
+                    border-radius: none;
+                  }
+                  .image1 img{
+                    width: 90%;
+                    margin: 10px;
+                  }
+
+                    .image5 {
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 15px;
+                    }
+
+                    .image5 img {
+                        width: 90%;
+                        margin: 10px;
+                    }
+
+                    .image7 {
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 15px;
+                    }
+
+                    .image7 img {
+                        width: 90%;
+                        margin: 10px;
+                    }
+            
+}                 
+
+
+
+@media (min-width:1000px) {
+/*contact us*/
+    .menu-icon{
+        display: none;
+    }
+    .contact-info1 {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .contactpage {
+        padding: 50px;
+        text-align: center;
+    }
+    .location,h2,p{
+        text-align: center;
+    }
+    .location-details {
+       align-items: flex-start;
+       margin-left: 31%;
+
+    }
+        .location-details p {
+            text-align: left;
+
+        }
+        .location-details p i {
+            margin-right: 2%;
+            background-color: orange;
+            border-radius: 50%;
+            color: black;
+            padding: 5px;
+            margin: 2px 0; 
+        }
+                .location-details p a{
+                    color:white;
+                    text-decoration: underline;
+                }
+        .contactpage button{
+            border: none;
+            background-color: orange;
+            padding: 10px 0;
+            width: 130px;
+            margin-top: 20px;
+        }
+                .contactpage button a{
+                    color: #000;
+                    font-weight: 600;
+                }
+
+                 /*gallery*/
+        
+                 .image1 {
+                     align-items: center;
+                     display: flex;
+                     justify-content: center;
+        
+                 }
+        
+                 .image1 img {
+                     width: 30%;
+                     margin: 20px;
+                 }
+        
+                 .image5 {
+                     align-items: center;
+                     display: flex;
+                     justify-content: center;
+        
+                 }
+        
+                 .image5 img {
+                     width: 30%;
+                     margin: 10px;
+                 }
+        
+                 .image7 {
+                     align-items: center;
+                     display: flex;
+                     justify-content: center;
+        
+                 }
+        
+                 .image7 img {
+                     width: 30%;
+                     margin: 10px;
+                 }.program1 {
+                    background-image: url(programs.JPG);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 500px;
+                    padding: 100px;
+                    align-items: center;
+                    text-align: center;
+                }
+                
+                .program1 h2 {
+                    margin-bottom: 3%;
+                    font-size: 25px;
+                }
+                
+                .programs2 {
+                    background-color: hsl(0, 0%, 10%);
+                    text-align: center;
+                    padding: 30px;
+                }
+                
+                .program-content {
+                
+                    padding: 10px;
+                }
+                
+                .program-image img {
+                    width: 90%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+                
+                .program-text {
+                    padding: 30px;
+                    text-align: left;
+                }
+                
+                .program-content1 {
+                    padding: 10px;
+                }
+                
+                .program-image1 img {
+                    width: 90%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+                
+                .program-text1 {
+                    padding: 30px;
+                    text-align: left;
+                    font-size: 10px;
+                }
+                
+                
+                
+                .program-content1 {
+                    padding: 10px;
+                }
+                
+                .program-image1 img {
+                    width: 70%;
+                    height: 280px;
+                    object-fit: cover;
+                }
+                
+                .program-text1 {
+                    padding: 30px;
+                    text-align: left;
+                }
+
+                                header {
+                                    color: white;
+                                    background-color: rgb(8, 43, 89);
+                                    height: 80px;
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                }
+                
+                                .logo h2 {
+                                    font-size: 30px;
+                                }
+                
+                                .navbars i {
+                                    display: none;
+                                }
+                
+                                #icon1 {
+                                    display: none;
+                                }
+                
+                
+                                .navbars nav ul li {
+                                    display: inline-block;
+                                    margin: 0 15px;
+                                }
+                
+                                .navbars nav ul li a {
+                                    color: white;
+                                }
+                
+                                .navbars nav ul li::after {
+                                    content: "";
+                                    display: block;
+                                    height: 2px;
+                                    width: 0%;
+                                    transition: .5s ease;
+                                    background-color: white;
+                                }
+                
+                                .navbars nav ul li:hover::after {
+                                    width: 100%;
+                
+                                }
+                
+                                /* homepage */
+                
+                                .homepage {
+                                    color: white;
+                                    background-image: url(picicon.JPG);
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    height: 500px;
+                                    text-align: center;
+                                    padding: 150px 0;
+                                    position: relative;
+                
+                                }
+                
+                                .homepage::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                    z-index: 1;
+                                }
+                
+                                .homepage_text {
+                                    position: relative;
+                                    z-index: 2;
+                
+                                }
+                
+                                .homepage p {
+                                    font-size: 20px;
+                                    margin-bottom: 15px;
+                                    
+                                }
+                
+                                .homepage h2 {
+                                    font-size: 40px;
+                                    margin-bottom: 25px;
+                
+                                }
+                
+                                .homepage button {
+                                    position: relative;
+                                    z-index: 1;
+                                    border: none;
+                                    padding: 15px;
+                                    width: 150px;
+                                    background: hsl(39, 100%, 60%);
+                                }
+                
+                                .homepage button a {
+                                    font-weight: bold;
+                                    font-size: 20px;
+                                    color: #000;
+                                }
+                
+                                /*homepage1*/
+                
+                
+                                .homepage1 {
+                                    margin-top: 20px;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                
+                                .image_container img {
+                                    width: 80%;
+                                    height: 250px;
+                                    object-fit: cover;
+                                    border-radius: 0px 20px 20px 0px;
+                                }
+                
+                                .homepage1-text {
+                                    padding: 40px;
+                                    text-align: center;
+                
+                                }
+                
+                                .homepage1-text h2 {
+                                    margin-bottom: 15px;
+                                }
+                
+                                .homepage1-text p {
+                                    margin-bottom: 20px;
+                                }
+                
+                                .homepage1 button {
+                                    border: none;
+                                    padding: 15px;
+                                    width: 150px;
+                                    background: hsl(39, 100%, 60%);
+                                }
+                
+                                .homepage1 button a {
+                                    font-weight: bold;
+                                    font-size: 15px;
+                                    color: #000;
+                                }
+                
+                                /*.homepage2*/
+                                .homepage2 {
+                                    margin-top: 20px;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                
+                                .image-container2 img {
+                                    width: 80%;
+                                    height: 250px;
+                                    object-fit: cover;
+                                    border-radius: 0px 20px 20px 0px;
+                                }
+                
+                                .homepage2-text {
+                                    padding: 40px;
+                                    text-align: center;
+                
+                                }
+                
+                                .homepage2-text h2 {
+                                    margin-bottom: 15px;
+                                }
+                
+                                .homepage2-text p {
+                                    margin-bottom: 20px;
+                                }
+                
+                                /*homepage3*/
+                                .homepage3 {
+                                    margin-top: 20px;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                
+                                .image-container3 img {
+                                    width: 80%;
+                                    height: 250px;
+                                    object-fit: cover;
+                                    border-radius: 0px 20px 20px 0px;
+                                }
+                
+                                .homepage3-text {
+                                    padding: 40px;
+                                    text-align: center;
+                
+                                }
+                
+                                .homepage3-text h2 {
+                                    margin-bottom: 15px;
+                                }
+                
+                                .homepage3-text p {
+                                    margin-bottom: 20px;
+                                }
+                
+                                /*homepage4*/
+                                .homepage4 {
+                                    margin-top: 20px;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                
+                                .image-container4 img {
+                                    width: 80%;
+                                    height: 250px;
+                                    object-fit: cover;
+                                    border-radius: 0px 20px 20px 0px;
+                                }
+                
+                                .homepage4-text {
+                                    padding: 40px;
+                                    text-align: center;
+                
+                                }
+                
+                                .homepage4-text h2 {
+                                    margin-bottom: 15px;
+                                }
+                
+                                .homepage4-text p {
+                                    margin-bottom: 20px;
+                                }
+                
+                
+                                /*About us */
+                
+                                .aboutpage {
+                                    color: white;
+                                    background-image: url(back2.jpg);
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    height: 500px;
+                                    text-align: center;
+                                    padding: 150px 0;
+                                    margin-bottom: 30px;
+                                }
+                
+                                .aboutpage p {
+                                    font-size: 20px;
+                                    margin-bottom: 20px;
+                                    font-weight: 400;
+                                }
+                
+                                .aboutpage h2 {
+                                    font-size: 30px;
+                                    margin-bottom: 30px;
+                
+                                }
+                
+                                .aboutpage1-content {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    margin: 50px 0;
+                                }
+                
+                                .aboutpage1 {
+                                    text-align: center;
+                
+                                }
+                
+                                .aboutpage1-img img {
+                                    width: 80%;
+                                    object-fit: cover;
+                                    margin: 20px 10px;
+                                    height: 250px;
+                                }
+                
+                                .aboutpage1-text {
+                                    padding: 40px;
+                                    margin: 30px 10px;
+                                    text-align: left;
+                
+                
+                                }
+                
+                                .aboutpage1-text h3 {
+                                    margin-bottom: 20px;
+                                }
+                
+                
+                                .aboutpage1-img1 img {
+                                    width: 80%;
+                                    object-fit: cover;
+                                    margin: 20px 10px;
+                                    height: 250px;
+                                }
+                
+                                .aboutpage1-text1 {
+                
+                                    text-align: left;
+                                    margin: 10px 40px;
+                                }
+                
+                                .aboutpage1-text1 h3 {
+                                    margin-bottom: 20px;
+                                }
+                
+                                .aboutpage1-content1 {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    margin: 50px 0;
+                                }
+                
+                                .program1 {
+                                    background-image: url(programs.JPG);
+                                    background-position: center;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    height: 500px;
+                                    padding: 150px 0;
+                                    align-items: center;
+                                    text-align: center;
+                                }
+                
+                                .program1 h2 {
+                                    margin-bottom: 3%;
+                                    font-size: 25px;
+                                }
+                
+                                .programs2 {
+                                    background-color: hsl(0, 0%, 10%);
+                                    text-align: center;
+                                    padding: 30px;
+                                }
+                
+                                .program-content {
+                
+                                    padding: 10px;
+                                }
+                
+                                .program-image img {
+                                    width: 90%;
+                                    height: 250px;
+                                    object-fit: cover;
+                                }
+                
+                                .program-text {
+                                    padding: 30px;
+                                    text-align: left;
+                                }
+                
+                                .program-content1 {
+                                    padding: 10px;
+                                }
+                
+                                .program-image1 img {
+                                    width: 90%;
+                                    height: 300px;
+                                    object-fit: cover;
+                                }
+                
+                                .program-text1 {
+                                    padding: 30px;
+                                    text-align: left;
+                                    font-size: 10px;
+                                }
+                
+                
+                
+                                .program-content1 {
+                                    padding: 10px;
+                                }
+                
+                                .program-image1 img {
+                                    width: 70%;
+                                    height: 280px;
+                                    object-fit: cover;
+                                }
+                
+                                .program-text1 {
+                                    padding: 30px;
+                                    text-align: left;
+                                }
+}
+
